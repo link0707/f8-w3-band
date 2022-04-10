@@ -115,7 +115,7 @@ html {
     z-index: -1;
     margin-top: 46px;
     padding-top: 50%;
-    background-image: url('/assets/images/slider-background.jpg');
+    background-image: url('../images/slider-background.jpg');
     background-repeat: no-repeat;
     background-size: contain;
 }
