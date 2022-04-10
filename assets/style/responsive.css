@@ -1,0 +1,124 @@
+/* PC */ 
+@media (min-width: 1024px) { 
+    #mobi-menu { 
+        display: none;
+    }
+}  
+
+/* TABLET AND MOBILE*/
+@media(max-width: 1023px) {
+    .place-item .place-detail .buy-ticket, 
+    .send-btn { 
+        padding: 16px;
+    }  
+
+    .name, .email, .message { 
+        padding: 16px;
+    }  
+
+    #footer i { 
+        font-size: 35px;
+        margin: 0 16p;
+        display: inline-block;
+        margin: 0 4px;
+    }  
+
+    #navigation .subnav li  {
+        padding: 16px;
+    }  
+
+    .contact-item { 
+        font-size: 20px; 
+        padding: 4px;
+    }
+}
+
+
+/* TABLET */ 
+@media (min-width: 740px) and (max-width: 1023px) { 
+    #mobi-menu {
+        display: none;
+    }
+} 
+
+/* MOBILE */ 
+@media (max-width: 739px) { 
+    #navigation { 
+        display: block;
+    } 
+
+    #navigation>li { 
+        display: block;
+    }   
+
+    #navigation>li>a { 
+        text-align: left;
+    } 
+
+    #navigation>li:first-child { 
+        display: inline-block;
+    } 
+
+    #navigation .subnav { 
+        position: initial; 
+        background-color: #333; 
+        color: #fff;
+    }   
+
+    #navigation .subnav li  {
+        padding: 16px 40px;
+    }
+
+    #navigation .subnav li a { 
+        color: #fff;
+    }
+
+    #search-container .search-btn { 
+        display: none;
+    }   
+
+    #mobi-menu { 
+        display: inline-block;
+    }
+
+    #mobi-menu .menu-btn { 
+        position: absolute; 
+        top: 0; 
+        right: 0;
+    } 
+
+    #header { 
+        overflow: hidden;
+    }  
+
+    .member-list .member-item { 
+        width: 100%; 
+        margin-bottom: 16px;
+    } 
+    
+    .tour-places .place-item  {
+        width: 100%;
+        margin-bottom: 16px;
+    } 
+
+    .contact, .infor { 
+        width: 100%; 
+        margin-bottom: 16px;
+    } 
+
+    .email-container, .name-container { 
+        width: 100%; 
+        margin-bottom: 8px;
+    }
+    
+    .place-item .place-detail .buy-ticket { 
+        width: 100%;
+    } 
+
+    .send-btn { 
+        width: 100%;
+    }
+}
+
+
+

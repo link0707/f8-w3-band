@@ -1,0 +1,536 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 15px;
+    font-family: 'Lato', sans-serif;
+    ;
+}
+
+#main {}
+
+/* Start: Header */
+/* Start: Navigation */
+#header {
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 46px;
+    background-color: #000; 
+}
+
+#navigation {
+    display: inline-block;
+}
+
+#navigation>li {
+    position: relative;
+    display: inline-block;
+    list-style-type: none;
+}
+
+#navigation>li>a {
+    display: block;
+    padding: 0 24px;
+    line-height: 46px;
+    text-align: center;
+    cursor: pointer;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+} 
+
+.place-item .place-detail .buy-ticket:hover,
+#mobi-menu:hover .menu-btn,
+.pay-btn:hover,
+.cancel-modal-btn:hover,
+#navigation>li:hover>a,
+.subnav li:hover, 
+.send-btn:hover {
+    background-color: #ccc;
+    color: #000;
+}
+
+#navigation li:last-child:hover .subnav{
+    display: block; 
+}
+
+.down-icon {
+    font-size: 12px;
+}
+
+#navigation .subnav {
+    display: none;
+    position: absolute;  
+    top: 46px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background-color: #fff;
+    min-width: 160px;
+}
+
+#navigation .subnav li {
+    list-style-type: none;
+    padding: 10px 16px;
+}
+
+#navigation .subnav li a {
+    color: #000;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+/* End: Navigation */
+/* Start: Search */  
+
+
+#mobi-menu, 
+#search-container {
+    display: inline-block;
+    float: right;
+}
+
+#mobi-menu .menu-btn,
+#search-container .search-btn {
+    display: block;
+    color: #fff;
+    line-height: 46px;
+    padding: 0 24px;
+}
+
+#search-container:hover .search-btn {
+    background-color: #f44336;
+}
+
+/* End: Search */
+/* End: Header */
+
+/* Start: Slider */
+#slider {
+    position: relative;
+    z-index: -1;
+    margin-top: 46px;
+    padding-top: 50%;
+    background-image: url('/assets/images/slider-background.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#slider .slider-body {
+    position: absolute;
+    padding: 32px 16px;
+    right: 0;
+    left: 0;
+    text-align: center;
+    bottom: 0;
+    color: #fff;
+}
+
+#slider .slider-body .slider-heading {
+    font-size: 24px;
+    font-weight: 100;
+    margin: 20px 0;
+}
+
+#slider .slider-body .slider-promise {
+    margin: 15px 0;
+    font-weight: bolder; 
+    text-shadow: 0 0 1px #000;
+}
+
+/* End: Slider */
+
+#content {}
+
+/* Start: Common Section */
+#content .common-section {
+    overflow: hidden;
+    /* 0 cho đến 800 */
+    max-width: 800px;
+    padding: 64px 16px;
+    margin: auto;
+}
+
+#content .common-section .main-tittle {
+    margin: 15px 0;
+    letter-spacing: 4px;
+    font-weight: 100;
+    text-align: center;
+    font-size: 30px;
+}
+
+#content .common-section .slogan {
+    margin: 15px 0;
+    color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    display: block;
+}
+
+/* End: Common Section */
+
+/* Start: About Section */
+#content .common-section .descrip-band {
+    margin: 15px 0;
+    text-align: justify;
+    line-height: 22.5px;
+}
+
+.member-list {
+    padding: 32px 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+.member-list .member-item {
+    text-align: center; 
+    float: left; 
+    width: calc(100% / 3);
+}
+
+.member-list .member-item .member-name {
+    margin: 15px 0;
+}
+
+.member-list .member-item .member-image {
+    width: 60%;
+    border-radius: 4px;
+}
+
+/* End: About Section */
+
+/* Start: Tour Section */
+#tour-section {
+    background-color: #000;
+    color: #fff;
+}
+
+.shedule {
+    margin-top: 40px;
+    background-color: #fff;
+    color: #000;
+}
+
+.shedule .shedule-item {
+    border-bottom: solid 1px #ddd;
+    padding: 8px 16px;
+    line-height: 22.5px;
+}
+
+.shedule .shedule-item:last-child {
+    border: none;
+}
+
+.shedule .shedule-item .month {
+    display: inline-block;
+    color: #757575;
+}
+
+.shedule .shedule-item .sold-out {
+    margin-left: 16px;
+    padding: 2px 8px;
+    background-color: #f44336;
+    color: #fff;
+}
+
+.shedule .shedule-item .quantity {
+    display: inline-block;
+    float: right;
+    margin-right: 16px;
+    margin-top: -2px;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    line-height: 24px;
+}
+
+.tour-places {
+    padding: 32px 8px;
+    margin: 0 -16px;
+    overflow: hidden;
+    margin-bottom: 16px;
+}
+
+.tour-places .place-item {
+    padding: 0 8px;
+    float: left;
+    width: calc(100% / 3);
+}
+
+.tour-places .place-item .place-image {
+    display: block;
+    width: 100%;
+}
+
+.tour-places .place-item:hover .place-image {
+    opacity: 0.6;
+}
+
+.place-item .place-detail {
+    background-color: #fff;
+    color: #000;
+    padding: 0 16px;
+}
+
+.place-item .place-detail .place-heading {
+    padding: 15px 0;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.place-item .place-detail .place-time {
+    opacity: 0.6;
+}
+
+.place-item .place-detail .place-desc {
+    padding: 15px 0;
+    line-height: 22.5px;
+}
+
+.place-item .place-detail .buy-ticket {
+    color: #fff;
+    background-color: #000;
+    text-decoration: none;
+    padding: 8px 16px;
+    margin-bottom: 16px; 
+    border: none;
+    display: inline-block;
+}
+/* End: Tour Section */
+
+/* Start: Contact Section */
+#contact-section {}
+
+.contact-body {
+    padding: 32px 0;
+    overflow: hidden;
+}
+
+.contact {
+    float: left;
+    width: 49.999%;
+}
+
+.contact-item {
+    display: block;
+    font-size: 18px;
+    padding: 2px;
+}
+
+.contact-item i {
+    padding-right: 16px;
+}
+
+.contact-item p {
+    display: inline-block;
+    font-weight: 500;
+} 
+
+.contact-item a { 
+    color: #101aef; 
+    opacity: 0.7;
+} 
+
+.contact-item a:hover { 
+    opacity: 1;
+}
+
+.infor {
+    float: right;
+    width: 49.999%;
+}
+
+.name-email {
+    display: block;
+    margin: 0 -8px 8px;
+}
+
+.name-container {
+    width: 49.999%;
+    display: inline-block;
+    padding: 0 8px;
+}
+
+.name {
+    width: 100%;
+    border: solid 1px #ccc;
+    padding: 8px;
+}
+
+.email-container {
+    width: 49.999%;
+    display: inline-block;
+    padding: 0 8px;
+    float: right;
+}
+
+.email {
+    width: 100%;
+    border: solid 1px #ccc;
+    padding: 8px;
+
+}
+
+.message {
+    padding: 8px;
+    border: solid 1px #ccc;
+    width: 100%;
+}
+
+.send-btn {
+    color: #fff;
+    background-color: #000;
+    text-decoration: none;
+    text-transform: uppercase;
+    float: right;
+    padding: 8px 16px;
+    margin: 16px 0;
+}
+
+/* End: Contact Section */
+
+/* Start: Map Section */
+#map-section .map-image {
+    display: block;
+    width: 100%;
+    filter: grayscale(50%);
+}
+
+/* End: Map Section */
+
+/* Start: Footer */
+#footer {
+    padding: 64px 0;
+    text-align: center;
+    opacity: 0.5;
+}
+
+#footer i {
+    font-size: 22px;
+}
+
+#footer i:hover {
+    opacity: 0.5;
+}
+
+#footer .licence {
+    margin: 15px 0;
+}
+
+#footer .licence a {
+    opacity: 0.8;
+    color: #000;
+}
+
+/* End: Footer */
+
+/* Start: Modal */
+.modal { 
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+} 
+
+.modal.open {
+    display: flex;
+}
+
+.modal .modal-container { 
+    position: relative;
+    color: #fff; 
+    width: 900px;  
+    animation: modalFadeIn ease 0.5s;
+}  
+
+.cancel-modal-btn { 
+    position: absolute; 
+    top: 0; 
+    right: 0; 
+    padding: 20px 16px;
+    font-size: 12px;
+}
+
+.modal .modal-container .modal-header { 
+    background-color: #009688; 
+    padding: 32px 16px; 
+    text-align: center; 
+    font-size: 30px;
+}  
+
+.modal .modal-container .modal-header i{ 
+    display: inline-block; 
+    margin-right: 12px;
+}  
+
+.modal .modal-container .modal-header p{ 
+    display: inline-block;
+} 
+
+.modal .modal-body { 
+    padding: 0 16px; 
+    background-color: #fff; 
+    color: #000;
+}  
+
+.modal-body .modal-label-ticket, 
+.modal-body .modal-label-email { 
+    display: block;
+    padding-top: 16px; 
+    padding-bottom: 8px; 
+} 
+
+.modal-body .modal-input-ticket, 
+.modal-body .modal-input-email { 
+    display: block;    
+    padding: 8px;  
+    border: 1px solid #ccc;  
+    width: 100%;   
+    font-size: 15px;
+}  
+
+.pay-btn {  
+    display: block;
+    background-color: #009688; 
+    padding: 16px; 
+    margin: 16px 0; 
+    text-align: center; 
+    color: #fff; 
+    text-decoration: none; 
+    text-transform: uppercase; 
+    font-weight: 500;
+} 
+
+.help-part { 
+    text-align: end; 
+    padding-top: 15px; 
+    padding-bottom: 32px;
+} 
+
+.help-part a { 
+    color: #2196F3; 
+}  
+
+@keyframes modalFadeIn { 
+    from { 
+        transform: translateY(-200px); 
+        opacity: 0;
+    } 
+    to { 
+        transform: translateY(0); 
+        opacity: 1;
+    }
+}
+
+/* End: Modal */
